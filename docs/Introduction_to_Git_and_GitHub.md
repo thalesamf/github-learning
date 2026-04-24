@@ -289,16 +289,12 @@ Markdown supoorts three types of lists:
 
 * In a **task** list, each item is placed using empty brackes ```[]``` for incomplete tasks, and filled brackets ```[x]``` for complete tasks.
 
-[x] This task is complete
-[ ] This task is not complete
-
-
-```bash
-git clone https://github.com/skills/communicate-using-markdown
-```
+- [x] This task is complete
+- [ ] This task is not complete
 
 Images can be displayed by providing URL to a file in the repository or an absolute URL. The descriptive text in the square brackets is displayed if the image is unable to load.
-![Mona the Octocat](myrepo/original.png)
+
+![Mona the Octocat](https://github.com/mona)
 
 
 ## :closed_book: Recap
