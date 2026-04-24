@@ -268,8 +268,40 @@ git push
 ```
 
 ## :pushpin: Markdown
+**Markdown** is a sintax for communicating on GitHub. We can format text to add a heading, lists, **bold**, ***italic***, and other stylings.
+
+A **heading** is placed in the beggining of a section. There are six sizes available:
+# This is an `<h1>` heading, which is the largest
+
+## This is an `<h2>` heading
+
+###### This is an `<h6>`heading, which is the smallest
+
+Markdown supoorts three types of lists:
+* In a **unordered** list, each item is placed on its own line using a ```-```, ```*```, or ```+```.
+
+* In a **ordered** list, each item is placed using numbers:
+    1.
+    2.
+    3.
+
+* In a **task** list, each item is placed using empty brackes ```[]``` for incomplete tasks, and filled brackets ```[x]``` for complete tasks.
+
+[x] This task is complete
+[ ] This task is not complete
 
 
+To add a terminal command:
+```
+```bash
+git clone https://github.com/skills/communicate-using-markdown
+```
+```
+
+Images can be displayed by providing URL to a file in the repository or an absolute URL. The descriptive text in the square brackets is displayed if the image is unable to load.
+```
+![Mona the Octocat](myrepo/original.png)
+```
 
 ## :closed_book: Recap
 * Version Control principles
