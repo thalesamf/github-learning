@@ -294,7 +294,9 @@ Markdown supoorts three types of lists:
 
 Images can be displayed by providing URL to a file in the repository or an absolute URL. The descriptive text in the square brackets is displayed if the image is unable to load.
 
-![Mona the Octocat](https://avatars.githubusercontent.com/u/92997159?v=4)
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/92997159?v=4" alt="Mona the Octocat">
+</p>
 
 
 ## :closed_book: Recap
