@@ -4,10 +4,7 @@
 
 **GitHub** builds on top of Git as a cloud-based platform, simplifying the collaboration through a user-friendly interface.
 
-### :thinking: What is a repository?
-A **repository** contains all files and the history.
-
-### :pushpin: How to create a repository on GitHub?
+## :pushpin: How to create a repository on GitHub?
 1. Using the drop-down meny, select **new repository**.
 2. Select the account to own the repository.
 3. Type the repository name
@@ -29,7 +26,7 @@ git clone repository-url
 ```bash
 cd repository-name
 ```
-### :pushpin: Git Workflow
+## :pushpin: Git Workflow
 The workflow involves three main areas:
 * **Working Directory**: Where we're making changes.
 * **Staging Area (Index)**: An area for grouping changes that we want to save to history.
@@ -52,7 +49,7 @@ Within a git repository, a file can exist in several valid states as it goes thr
     c. **Staged**: It has been modified, and the changes have been added to the staging area.
     d. **Commited**: It is in the repository and represents the last version of the file.
 
-### :pushpin: How to setup Git?
+## :pushpin: How to setup Git?
 1. To show the current installed version of Git:
 ```bash
 git --version
@@ -102,7 +99,7 @@ git status
 git checkout
 ```
 
-### :pushpin: How to compare changes?
+## :pushpin: How to compare changes?
 Git uses simbols and coloring to show file changes:
 * ```+``` in gree indicates **added** lines
 * ```-``` in red indicates **removed** lines
@@ -112,7 +109,7 @@ The `` git diff``` show differeces between the states.
 * ``` git diff --staged```: Differences between staging area and previous commit.
 * ``` git HEAD~1```: Differences between current commit and previous commit.
 
-### :pushpin: How to work with branches?
+## :pushpin: How to work with branches?
 The branches allow working on a dependent version without influencing the original.
 * The ```main``` branch is usually the trusted working version.
 * A ```feature/*``` is a safe space to develop without affecting the trusted version.
@@ -151,7 +148,7 @@ To delete a branch
  git branch my-branch-name
  ```
 
-### :pushpin: Git Collaboration Concepts
+## :pushpin: Git Collaboration Concepts
 Typically, a collborative workflow looks like:
 1. Copy a repository to the local machine (**clonning**)
 2. Create branches and develop new features (**branching**)
@@ -197,6 +194,78 @@ To convert a Discussion to an Issue:
 1. Navigate to the Discussion
 2. Select the ```...``` and **Convert to issue**
 3. Confir the conversion and select the repository to create the new issue.
+
+
+### :rocket: Contributing to an existing repository
+```bash
+# Clone a GitHub repository
+# Replace `owner/repository` with the owner and name of the repository to clone
+git clone https://github.com/owner/repository.git
+
+# Navigate to the repository
+cd repository
+
+# Create a branch
+git branch my-branch
+
+# Switch to the branch
+git checkout my-branch
+
+# Make changes
+
+# Stage
+git add file1.md file2.md
+
+# Commit
+git commit -m "my snapshot"
+
+# pPush
+git push --set-upstream origin my-branch
+```
+
+### :rocket: Start a repository in GitHub
+```bash
+# Create directory, and initialize it with git-specific functions
+git init my-repo
+
+# Change into the `my-repo` directory
+cd my-repo
+
+# Create the first file in the project
+touch README.md
+
+# Stage
+git add README.md
+
+# Commit
+git commit -m "add README to initial commit"
+
+# Provide the path for the repository you created on github
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
+
+# Push
+git push --set-upstream origin main
+```
+### :pushpin: Contribute to an existing branch on GitHub
+```bash
+# Change into the `repo` directory
+cd repo
+
+# Update all remote tracking branches, and the currently checked out branch
+git pull
+
+# Change into the existing branch called `feature-a`
+git checkout feature-a
+
+# Stage
+git add file1.md
+
+# Commit
+git commit -m "edit file1"
+
+# Push
+git push
+```
 
 ## :closed_book: Recap
 * Version Control principles
