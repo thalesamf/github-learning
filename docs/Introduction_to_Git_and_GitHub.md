@@ -163,7 +163,40 @@ Typically, a collborative workflow looks like:
 A **pull** request is used to signal that the commits from one branch are ready to merged into another branch. Then, the reviewers can comment on changes, add their own, or use the pull request for further discussion. Once approved (if required), the pull request's source branch is merged to the main branch.
 
 ### :pushpin: What are Issues?
+The **Issues** are used to track ideas, feedback, tasks, or bugs on GitHub.
 
+To create an Issue:
+1. Navigate to the main page of the repository
+2. Under the repository name, select **Issues**
+3. Select **New Issue**
+4. If the repository uses issue templates, next to the type of issue, select **Get started**. If the type of issu isn't included, select **Open a blank issue**. 
+5. In **Add a title**, enter the title for the issue.
+6. In **Add a description**, type the description for issue.
+7. If you're a manager of the repository, you can assign the issue to someone.
+8. When finished, click on **Submit new issue**
+
+### :pushpin: What are Discussions?
+They're designed for conversations, such as Q&A, ideas, or general feedback.
+
+To enable a discussion in the repository:
+1. Navigate to the main page of the repository.
+2. Under the repository name, select **Settings**
+3. Scroll down to the **Features** and under **Discussions**, select **Setup discussions**
+4. Under **Start a new discussion**, edit the template to match your community's tone and resources.
+5. Select **Start discussion**
+
+To create a new discussion:
+1. Navigate to the main page of the repository
+2. Under the repository name, selec **Discussions**
+3. Select **New discussion**
+4. Selec the discussion category by clicking on **Get started**
+5. Under **Discussion title**, enter the title for the discussion, and under **Write** enter the body of the discussion.
+6. Click on **Start discussion**
+
+To convert a Discussion to an Issue:
+1. Navigate to the Discussion
+2. Select the ```...``` and **Convert to issue**
+3. Confir the conversion and select the repository to create the new issue.
 
 ## :closed_book: Recap
 * Version Control principles
