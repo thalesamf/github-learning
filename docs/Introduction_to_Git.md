@@ -1,6 +1,17 @@
 ## :open_book: Introduction to Git
+The workflow involves three main areas:
+* **Working Directory**: The project files where we're making changes.
+* **Staging Area (Index)**: A preparation area for grouping changes we want to save to history.
+* **Repository**: The permanent records of the history.
 
-### Git in the CLI
+Git maintains a history of the project through commits. Each commit contains:
+* Unique hash identifier
+* Parent commit
+* Author information
+* Timestamp
+* Commit message
+
+### :rocket: What are the important commands?
 1. To show the current installed version of Git:
 ```bash
 git --version
@@ -18,57 +29,62 @@ git config --global user.name "First Last"
 git config --global user.email "email@example.com"
 ```
 :bulb: Confirm the changes by viewing the configuration:
+
 ```bash
 git config --global --list
 ```
-## :open_book: The Git Workflow
-The workflow involves three main areas:
-* **Working Directory**: The project files where we're making changes.
-* **Staging Area (Index)**: A preparation area for grouping changes we want to save to history.
-* **Repository**: The permanent records of the history.
 
-Git maintains a history of the project through commits. Each commit contains:
-* Unique hash identifier
-* Parent commit
-* Author information
-* Timestamp
-* Commit message
+4. To start a new repository:
+```bash
+ git init
+ ```
 
-To start a new repository:
-```bash git init```
-
-To group related changes in the staging are:
-```bash git add```
+5. To group related changes in the staging are:
+```bash 
+git add
+```
  
-To save the changes to the history:
-```bash git commit```
+5. To save the changes to the history:
+```bash 
+git commit
+```
+
 :bulb: Add a commit message using ```bash -m```:
 
-To view the current state of the working directory and staging area:
-```bash git status```
+6. To view the current state of the working directory and staging area:
+```bash 
+git status
+```
 
-To change the working directory:
-```bash git checkout```
+7. To change the working directory:
+```bash 
+git checkout
+```
 
-### Initialize a project repository in the CLI
+### How to initialize a repository in the CLI?
 1. In the terminal, navigate to the directory. Then, initialize the Git repository:
-```bash git init```
+```bash 
+git init
+```
+
 2. After creating a repository, check the status:
-```bash git status```
+```bash
+git status
+```
 
-### Comparing changes
+### How to compare changes?
 Git uses simbols and coloring to show file changes:
-* ```bash +``` in gree indicates **added** lines
-* ```bash -``` in red indicates **removed** lines
+* ```+``` in gree indicates **added** lines
+* ```-``` in red indicates **removed** lines
 
-The ```bash git diff``` show differeces between the states.
-* ```bash git diff```: Differences between the working directory and the staging area.
-* ```bash git diff --staged```: Differences between staging area and previous commit.
-* ```bash git HEAD~1```: Differences between current commit and previous commit.
+The `` git diff``` show differeces between the states.
+* `` git diff```: Differences between the working directory and the staging area.
+* `` git diff --staged```: Differences between staging area and previous commit.
+* `` git HEAD~1```: Differences between current commit and previous commit.
 
-### Working with Branches
+### How to work with branches?
 The branches allow working on a dependent version without influencing the original.
-* The ```bash main``` is usually the trusted working version.
+* The ```main``` branch is usually the trusted working version.
 * A **feature branch** is a safe space to develop without affecting the trusted version.
 
 There are different ways of combining branches, differing in the styles of organization, transparency, and traceability.
@@ -79,19 +95,29 @@ There are different ways of combining branches, differing in the styles of organ
 
 #### What are the important Git commands?
 * To list the available branches:
-```bash git branch --list```
+```bash 
+git branch --list
+```
 
 * To start a new branch from the current branch:
-```bash git branch my-branch-name```
+```bash
+git branch my-branch-name
+```
 
 * To change the working directory to a different branch:
-```bash git checkout my-branch-name```
+```bash
+ git checkout my-branch-name
+ ```
 
 * To apply the commits from one branch onto another branch (default: Fast-forward merge):
-```bash git merge my-branch-name -m "message"```
+```bash
+ git merge my-branch-name -m "message"
+ ```
 
  * To delete a branch
- ```bash git branch my-branch-name```
+ ```bash
+ git branch my-branch-name
+ ```
 
 ### Git Collaboration Concepts
 Typically, a collborative workflow looks like:
