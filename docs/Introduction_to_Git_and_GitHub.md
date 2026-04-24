@@ -267,6 +267,10 @@ git commit -m "edit file1"
 git push
 ```
 
+## :pushpin: Markdown
+
+
+
 ## :closed_book: Recap
 * Version Control principles
 * Configure Git
@@ -274,3 +278,4 @@ git push
 * Explore project history and compare changes
 * Work with branches
 * Collaboration concepts
+* Communication using Markdown
