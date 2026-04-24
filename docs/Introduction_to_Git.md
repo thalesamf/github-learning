@@ -1,17 +1,4 @@
-# :open_book: Step 1: Introduction to Git Version Control
-
-### What is Version Control?
-Version control allows to solve issues like:
-* Backup and recovery
-* File duplication
-* Conflicting changes
-* Team collaboration
-
-### How to use Git for Version Control?
-* Command Line Interface (CLI)
-* Code Editors (e.g., Visual Studio Code)
-* Hosting Services (e.g., GitHub)
-* Desktop Applications (e.g., GitHub Desktop)
+## :open_book: Introduction to Git
 
 ### Git in the CLI
 1. To show the current installed version of Git:
@@ -30,7 +17,94 @@ git config --global user.name "First Last"
 
 git config --global user.email "email@example.com"
 ```
-:mag: Confirm the changes by viewing the configuration:
+:bulb: Confirm the changes by viewing the configuration:
 ```bash
 git config --global --list
 ```
+## :open_book: The Git Workflow
+The workflow involves three main areas:
+* **Working Directory**: The project files where we're making changes.
+* **Staging Area (Index)**: A preparation area for grouping changes we want to save to history.
+* **Repository**: The permanent records of the history.
+
+Git maintains a history of the project through commits. Each commit contains:
+* Unique hash identifier
+* Parent commit
+* Author information
+* Timestamp
+* Commit message
+
+To start a new repository:
+```bash git init```
+
+To group related changes in the staging are:
+```bash git add```
+ 
+To save the changes to the history:
+```bash git commit```
+:bulb: Add a commit message using ```bash -m```:
+
+To view the current state of the working directory and staging area:
+```bash git status```
+
+To change the working directory:
+```bash git checkout```
+
+### Initialize a project repository in the CLI
+1. In the terminal, navigate to the directory. Then, initialize the Git repository:
+```bash git init```
+2. After creating a repository, check the status:
+```bash git status```
+
+### Comparing changes
+Git uses simbols and coloring to show file changes:
+* ```bash +``` in gree indicates **added** lines
+* ```bash -``` in red indicates **removed** lines
+
+The ```bash git diff``` show differeces between the states.
+* ```bash git diff```: Differences between the working directory and the staging area.
+* ```bash git diff --staged```: Differences between staging area and previous commit.
+* ```bash git HEAD~1```: Differences between current commit and previous commit.
+
+### Working with Branches
+The branches allow working on a dependent version without influencing the original.
+* The ```bash main``` is usually the trusted working version.
+* A **feature branch** is a safe space to develop without affecting the trusted version.
+
+There are different ways of combining branches, differing in the styles of organization, transparency, and traceability.
+* **Fast-forward merge**: Move the new commits from the child branch onto the parent branch.
+* **Merge commit**: Apply the changes as a single new commit on the parent branch, leaving the child branch for traceability.
+* **Squash merge**: Collapse the commits from one branch into a single new commit on the other branch.
+
+
+#### What are the important Git commands?
+* To list the available branches:
+```bash git branch --list```
+
+* To start a new branch from the current branch:
+```bash git branch my-branch-name```
+
+* To change the working directory to a different branch:
+```bash git checkout my-branch-name```
+
+* To apply the commits from one branch onto another branch (default: Fast-forward merge):
+```bash git merge my-branch-name -m "message"```
+
+ * To delete a branch
+ ```bash git branch my-branch-name```
+
+### Git Collaboration Concepts
+Typically, a collborative workflow looks like:
+1. Copy a repository to the local machine (**clonning**)
+2. Create branches and develop new features (**branching**)
+3. Publish the changes to a remote repository, somewhere others can also access (**pushing**)
+4. The collaborators decide to merge the changes in the main branch (**pulling**)
+5. Additionaly, we can ask for another developer to integrate the changes in the main branch (**pull request**)
+
+## :pencil2: Recap
+* Version Control principles
+* Configure Git
+* Create repositories, staged changes, and commit
+* Explore project history and compare changes
+* Work with branches
+* Collaboration concepts
