@@ -78,9 +78,9 @@ Git uses simbols and coloring to show file changes:
 * ```-``` in red indicates **removed** lines
 
 The `` git diff``` show differeces between the states.
-* `` git diff```: Differences between the working directory and the staging area.
-* `` git diff --staged```: Differences between staging area and previous commit.
-* `` git HEAD~1```: Differences between current commit and previous commit.
+* ``` git diff```: Differences between the working directory and the staging area.
+* ``` git diff --staged```: Differences between staging area and previous commit.
+* ``` git HEAD~1```: Differences between current commit and previous commit.
 
 ### :pushpin: How to work with branches?
 The branches allow working on a dependent version without influencing the original.
