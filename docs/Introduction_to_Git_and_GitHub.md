@@ -280,10 +280,12 @@ A **heading** is placed in the beggining of a section. There are six sizes avail
 Markdown supoorts three types of lists:
 * In a **unordered** list, each item is placed on its own line using a ```-```, ```*```, or ```+```.
 
+
 * In a **ordered** list, each item is placed using numbers:
     1.
     2.
     3.
+
 
 * In a **task** list, each item is placed using empty brackes ```[]``` for incomplete tasks, and filled brackets ```[x]``` for complete tasks.
 
@@ -291,17 +293,13 @@ Markdown supoorts three types of lists:
 [ ] This task is not complete
 
 
-To add a terminal command:
-```
 ```bash
 git clone https://github.com/skills/communicate-using-markdown
 ```
-```
 
 Images can be displayed by providing URL to a file in the repository or an absolute URL. The descriptive text in the square brackets is displayed if the image is unable to load.
-```
 ![Mona the Octocat](myrepo/original.png)
-```
+
 
 ## :closed_book: Recap
 * Version Control principles
