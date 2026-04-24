@@ -11,7 +11,7 @@ Git maintains a history of the project through commits. Each commit contains:
 * Timestamp
 * Commit message
 
-### :rocket: What are the important commands?
+### :pushpin: What are the important commands?
 1. To show the current installed version of Git:
 ```bash
 git --version
@@ -61,7 +61,7 @@ git status
 git checkout
 ```
 
-### How to initialize a repository in the CLI?
+### :pushpin: How to initialize a repository in the CLI?
 1. In the terminal, navigate to the directory. Then, initialize the Git repository:
 ```bash 
 git init
@@ -72,7 +72,7 @@ git init
 git status
 ```
 
-### How to compare changes?
+### :pushpin: How to compare changes?
 Git uses simbols and coloring to show file changes:
 * ```+``` in gree indicates **added** lines
 * ```-``` in red indicates **removed** lines
@@ -82,7 +82,7 @@ The `` git diff``` show differeces between the states.
 * `` git diff --staged```: Differences between staging area and previous commit.
 * `` git HEAD~1```: Differences between current commit and previous commit.
 
-### How to work with branches?
+### :pushpin: How to work with branches?
 The branches allow working on a dependent version without influencing the original.
 * The ```main``` branch is usually the trusted working version.
 * A **feature branch** is a safe space to develop without affecting the trusted version.
@@ -93,7 +93,7 @@ There are different ways of combining branches, differing in the styles of organ
 * **Squash merge**: Collapse the commits from one branch into a single new commit on the other branch.
 
 
-#### What are the important Git commands?
+#### :pushpin: What are the important Git commands?
 * To list the available branches:
 ```bash 
 git branch --list
@@ -119,7 +119,7 @@ git branch my-branch-name
  git branch my-branch-name
  ```
 
-### Git Collaboration Concepts
+### :pushpin: Git Collaboration Concepts
 Typically, a collborative workflow looks like:
 1. Copy a repository to the local machine (**clonning**)
 2. Create branches and develop new features (**branching**)
@@ -127,7 +127,7 @@ Typically, a collborative workflow looks like:
 4. The collaborators decide to merge the changes in the main branch (**pulling**)
 5. Additionaly, we can ask for another developer to integrate the changes in the main branch (**pull request**)
 
-## :pencil2: Recap
+## :closed_book: Recap
 * Version Control principles
 * Configure Git
 * Create repositories, staged changes, and commit
