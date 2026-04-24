@@ -162,6 +162,9 @@ Typically, a collborative workflow looks like:
 ### :pushpin: What are pull requests?
 A **pull** request is used to signal that the commits from one branch are ready to merged into another branch. Then, the reviewers can comment on changes, add their own, or use the pull request for further discussion. Once approved (if required), the pull request's source branch is merged to the main branch.
 
+### :pushpin: What are Issues?
+
+
 ## :closed_book: Recap
 * Version Control principles
 * Configure Git
