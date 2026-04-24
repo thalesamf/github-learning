@@ -24,7 +24,7 @@ This allows to create a local copy of the repository, being useful for making ch
 4. Run the command below replacing with the copied URL:
 ```bash
 git clone repository-url
-```bash
+```
 5. Navigate into the repository folder:
 ```bash
 cd repository-name
