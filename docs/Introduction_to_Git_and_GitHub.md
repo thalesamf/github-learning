@@ -195,8 +195,31 @@ To convert a Discussion to an Issue:
 2. Select the ```...``` and **Convert to issue**
 3. Confir the conversion and select the repository to create the new issue.
 
+### :rocket: Starting a repository in GitHub
+```bash
+# Create directory, and initialize it with git-specific functions
+git init my-repo
 
-### :rocket: Contributing to an existing repository
+# Change into the `my-repo` directory
+cd my-repo
+
+# Create the first file in the project
+touch README.md
+
+# Stage
+git add README.md
+
+# Commit
+git commit -m "add README to initial commit"
+
+# Provide the path for the repository you created on github
+git remote add origin https://github.com/owner/repository.git
+
+# Push
+git push --set-upstream origin main
+```
+
+### :rocket: Contributing to an existing repository on GitHub
 ```bash
 # Clone a GitHub repository
 # Replace `owner/repository` with the owner and name of the repository to clone
@@ -223,30 +246,7 @@ git commit -m "my snapshot"
 git push --set-upstream origin my-branch
 ```
 
-### :rocket: Start a repository in GitHub
-```bash
-# Create directory, and initialize it with git-specific functions
-git init my-repo
-
-# Change into the `my-repo` directory
-cd my-repo
-
-# Create the first file in the project
-touch README.md
-
-# Stage
-git add README.md
-
-# Commit
-git commit -m "add README to initial commit"
-
-# Provide the path for the repository you created on github
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
-
-# Push
-git push --set-upstream origin main
-```
-### :pushpin: Contribute to an existing branch on GitHub
+### :pushpin: Contributing to an existing branch on GitHub
 ```bash
 # Change into the `repo` directory
 cd repo
