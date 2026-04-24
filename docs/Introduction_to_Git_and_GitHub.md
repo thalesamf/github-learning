@@ -193,7 +193,7 @@ To create a new discussion:
 To convert a Discussion to an Issue:
 1. Navigate to the Discussion
 2. Select the ```...``` and **Convert to issue**
-3. Confir the conversion and select the repository to create the new issue.
+3. Confirm the conversion and select the repository to create the new issue.
 
 ### :rocket: Starting a repository in GitHub
 ```bash
