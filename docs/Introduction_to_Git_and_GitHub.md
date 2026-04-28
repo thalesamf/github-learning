@@ -298,6 +298,41 @@ Images can be displayed by providing URL to a file in the repository or an absol
   <img src="https://avatars.githubusercontent.com/u/92997159?v=4" alt="Mona the Octocat" width="250">
 </p>
 
+## :pushpin: Reviewing Pull Requests
+A **pull request** is used to review the work from one branch before merging it into another branch, and has different tabs to manage the conversation:
+* **Conversation**: Overview of the pull request.
+* **Commits**: List of commits unique to the proposed branch.
+* **Checks**: The results of any automations applied to the pull request using GitHub Actions.
+* **Files Changed**: An overview of the proposed changes before and after.
+
+:bulb: A **draft pull request** can be created for unfinished work
+
+The **pull request assignee** is the person who assign the change.
+
+A **pull request review** is the feedback from other collaborators or community members on the proposed changes. By assigning a reviwer, three options are available for providing feedback:
+1. Comment: General feedback without approval or rejection.
+2. **Approve**: Allows merging.
+3. **Request Changes**: The proposed changes do not meet the expectations.
+
+The **Files changed** tab is the promary place for collecting feedback.
+
+Usually, the review tipycally follows:
+1. Reviewing the **title** and **description**. It should convey the intended changes.
+2. Reviewing the **Files changed** tab to ensure that the proposed changes matches the description.
+3. Try-out the proposed change to verify they match the intension.
+4. Use the **Contribution Guide** for any guidance on review requirements, testing, quality control, etc.
+
+Review ideas:
+* Identify potential issues, risks, and limitations.
+* Suggest changes and improvements.
+* Share awarness of changes that pull request doesn't account for.
+* Ask questions to verify shared understanding.
+* Highlight significant changes.
+* Prioritize the most important feedback.
+* Be concide and provide meaninful detail.
+* Treat the pull request author with kindness and empathy.
+
+The **Add a suggestion** inserts a specially formatted code block, without the need to open a code editor.
 
 ## :closed_book: Recap
 * Version Control principles
@@ -307,3 +342,8 @@ Images can be displayed by providing URL to a file in the repository or an absol
 * Work with branches
 * Collaboration concepts
 * Communication using Markdown
+* Pull requests
+
+** :pushpin: Git Cheat Sheet
+https://training.github.com/downloads/github-git-cheat-sheet/
+
