@@ -267,7 +267,7 @@ git commit -m "edit file1"
 git push
 ```
 
-## :pushpin: Markdown
+### :pushpin: Markdown
 **Markdown** is a sintax for communicating on GitHub. We can format text to add a heading, lists, **bold**, ***italic***, and other stylings.
 
 A **heading** is placed in the beggining of a section. There are six sizes available:
@@ -298,7 +298,7 @@ Images can be displayed by providing URL to a file in the repository or an absol
   <img src="https://avatars.githubusercontent.com/u/92997159?v=4" alt="Mona the Octocat" width="250">
 </p>
 
-## :pushpin: Reviewing Pull Requests
+## :pushpin: Pull Requests
 A **pull request** is used to review the work from one branch before merging it into another branch, and has different tabs to manage the conversation:
 * **Conversation**: Overview of the pull request.
 * **Commits**: List of commits unique to the proposed branch.
@@ -334,6 +334,52 @@ Review ideas:
 
 The **Add a suggestion** inserts a specially formatted code block, without the need to open a code editor.
 
+
+## :pushpin: Repository Managment
+### How to protect the code?
+GitHub provides several ways to protect a repository:
+1. **Repository Rulesets:
+    * Pushing code directly to branches
+    * Deleting or renaming branches
+    * Force pushing
+    * etc.
+
+2. ```.gitignore``` 
+    * Temporary files created while running the code
+    * Configuration files with sensitive information
+    * System files
+    * etc.
+
+### How to add a branch ruleset?
+1. Go to **Settings**
+2. In the left, expand the **Rules** and select **Rulesets**
+3. Click on **New ruleset** dropdown and select **New branch ruleset**
+4. Set the **Ruleset Name** and change the **Enforcement status** to ```Active```
+5. Navigate to **Target branches** and click on **Add target**. Then, add **Include default branch** to ensure protections aren't bypassed by switching the default branch, and use **Include by pattern** to enter ```main```.
+6. In **Rules**, check **Restrict deletions**, **Require a pull request before merging** and **Require review from Code Owners**, and **Block force pushs**
+7. Lastly, scroll to the bottom and click on **Create**
+
+### How to create a ```.gitignore``` file?
+1. Navigate to **Code** and verify that you are on the ```main``` branch.
+2. Click on **Add file** and select **Create new file**
+3. Enter the file name ```.gitignore``` and add the content to the file
+4. Click on **Commit changes**. We can't commit to  ```main``` because it's a protected branch. thus, we need to create a branch, and click on ***Propose changes** to start a pull request.
+
+:bulb: The [gitignore](https://github.com/github/gitignore) repository have a collection of ```.gitignore``` templates.
+
+### How to prepare a contribution guide?
+**Collaborators** are the people with granted access to write to the project through repository settings, which provide permissions to change project files.
+
+The ```CONTRIBUTING.md``` file is a guide for collaboration.
+    * How to prepare a developer setup
+    * The process for suggesting changes
+    * The project's coding style preference, to keep things consistent
+    * How to ask for help
+
+The ```CODEOWNERS``` file assigns specific people responsible for a repository.
+
+
+
 ## :closed_book: Recap
 * Version Control principles
 * Configure Git
@@ -344,6 +390,5 @@ The **Add a suggestion** inserts a specially formatted code block, without the n
 * Communication using Markdown
 * Pull requests
 
-** :pushpin: Git Cheat Sheet
-https://training.github.com/downloads/github-git-cheat-sheet/
-
+## ** :pushpin: Resources
+[Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
